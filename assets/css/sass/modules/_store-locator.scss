@@ -1,0 +1,99 @@
+.asi-store-locator {
+  background-image: url("../images/store-locator-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  clear: both;
+  margin-top: 0px;
+
+  a{
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    font-family: 'ProximaNova-Regular';
+    font-size: 11pt;
+  }
+
+  .asi-store-locator-search-icon {
+    height: 18px;
+    float: right;
+    margin-top: 4px;
+    @include susy-media(850px) {
+      height: 22px;
+      margin-top: auto;
+    }
+  }
+
+  h3 {
+    font-family: 'Knockout-HTF49-Liteweight';
+    text-align: center;
+    padding-top: 24px;
+    font-size: 18pt;
+    margin-bottom: 13px;
+    letter-spacing: 1.5px;
+    @include susy-media(850px) {
+      padding-top: 66px;
+      font-size: 38pt;
+      margin-bottom: 30px;
+    }
+  }
+
+  .asi-red-separator{
+    margin-bottom: 15px;
+    @include susy-media(850px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .asi-store-locator-input{
+    display: block;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 16px;
+    @include susy-media(850px) {
+      width: 578px;
+      margin-bottom: 40px;
+    }
+  }
+
+  input[type="text"] {
+    width: 79%;
+    font-family: "ProximaNova-Regular";
+    font-size: 16px;
+    @include susy-media(850px) {
+      font-size: 22px;
+    }
+    color: #FFFFFF !important;
+    letter-spacing: 0.61px;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin-left: 0px;
+    background: none;
+    @include placeholder {
+      color: white;
+      font-family: "ProximaNova-LightItalic";
+    }
+  }
+
+  .asi-store-locator-list-link{
+    padding-bottom: 21px;
+    font-size: 10px;
+    @include susy-media(850px) {
+      font-size: 11pt;
+      padding-bottom: 55px;
+    }
+    .asi-arrow-icon{
+      height: 7px;
+      @include susy-media(850px) {
+        height: 9px;
+      }
+    }
+  }
+}

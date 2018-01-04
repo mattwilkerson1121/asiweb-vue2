@@ -1,0 +1,66 @@
+.asi-made-to-mix {
+  color: $black;
+  margin: 76px auto 84px auto;
+  @include susy-media(850px) {
+    max-width: 760px;
+  }
+  @include susy-media(1200px) {
+    margin-bottom: 102px;
+  }
+
+  .asi-made-to-mix-left-column{
+    text-align: center;
+    @include susy-media(850px) {
+      float: left;
+    }
+
+    .asi-made-to-mix-headline {
+      font-family: 'Knockout-HTF49-Liteweight';
+      font-size: 28px;
+      line-height: 30px;
+    }
+
+    .asi-made-to-mix-logo {
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      height: 196px;
+      width: 196px;
+      @include susy-media(850px) {
+        margin-bottom: 0px;
+      }
+    }
+
+  }
+
+  .asi-made-to-mix-right-column{
+    text-align: center;
+    @include susy-media(850px) {
+      margin-left: 265px;
+      text-align: left;
+      margin-top: 35px;
+    }
+
+    .asi-made-to-mix-description-text {
+      font-size: 18px;
+      line-height: 32px;
+      max-width: 335px;
+      margin: 0 auto;
+      @include susy-media(850px) {
+        line-height: 36px;
+        font-size: 20px;
+        margin: 0;
+        max-width: none;
+      }
+    }
+
+    .asi-made-to-mix-button {
+      margin-top: 30px;
+      @include susy-media(850px) {
+        margin-top: 33px;
+      }
+    }
+
+  }
+
+}

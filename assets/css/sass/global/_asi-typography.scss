@@ -1,0 +1,28 @@
+.asi-display-1,
+h1.asi-display-1 {
+	font-family: $knockout49Font;
+	@include font-size(30px);
+	@media (min-width:768px) {
+		font-size: 90px;
+	}
+}
+h2.asi-display-2,
+.asi-display-2 {
+	font-family: $knockout29Font;
+	@include font-size(28px);
+	@media (min-width:768px) {
+		font-size: 54px;
+	}
+}
+h3.asi-display-3,
+.asi-display-3 {
+	font-family: $knockout29Font;
+	@include font-size(24px);
+	@media (min-width:768px) {
+		font-size: 44px;
+	}
+}
+[class^="asi-display-"]{
+	line-height:$line-height-small;
+	letter-spacing:$letter-spacing-small;
+}

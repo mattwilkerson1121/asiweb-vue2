@@ -1,0 +1,15 @@
+
+// Storyblok Auth Token
+// API Key: 7GGpXdCjVzcyQkn4G5qGAwtt-41432-DT82RgvNKxbBWkY6syxv
+
+var axios = require('axios')
+
+axios.get('https://api.storyblok.com/v1/spaces', {
+  headers: {'Authorization': '7GGpXdCjVzcyQkn4G5qGAwtt-41432-DT82RgvNKxbBWkY6syxv'}
+})
+.then(function (response) {
+  console.log(response.data)
+})
+.catch(function (error) {
+  console.log(error.response.data)
+})

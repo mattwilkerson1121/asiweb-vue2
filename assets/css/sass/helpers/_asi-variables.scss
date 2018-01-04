@@ -1,0 +1,88 @@
+$white: #ffffff;
+$black: #181818;
+$red: #ee3d42;
+$red-dark: #DB0006;
+$gray-light: #e9e9e9;
+$gray-dark: #4a4a4a;
+$gray-very-dark: #393939;
+$gray-medium: #a7a7a7;
+$gray-medium-light: #f4f4f4;
+$gray-hover: #9b9b9b;
+$gray-medium-2: #cfcfcf;
+
+$brand-white: #ffffff;
+$brand-black: #181818;
+$brand-red: #ee3d42;
+$brand-red-dark: #DB0006;
+$brand-gray-lighter: #f0f0f1;
+$brand-gray-dark: #525050;
+$brand-gray-very-dark: #2f2f2f;
+$brand-gray-medium: #adadad;
+$brand-gray-medium-light: #dddddd;
+$brand-gray-hover: #9b9b9b;
+$brand-gray-medium-2: #c2c2c2;
+$brand-tan: #efefea;
+
+$brand-base-font-size: 16px;
+$brand-base-font-size-mobile: 14px;
+
+$letter-spacing-small: 1px;
+$letter-spacing-big: 1.5px;
+$letter-spacing-large: 2px;
+
+$line-height-small: 1;
+
+$serifFont: Georgia, Times, serif;
+$nonserifFont: 'ProximaNova-Regular', Verdana, Helvetica, Arial, sans-serif;
+
+$knockout29Font: 'Knockout-HTF29-JuniorLiteweight','ProximaNova-Semibold',sans-serif;
+$knockout49Font: 'Knockout-HTF49-Liteweight','ProximaNova-Bold',sans-serif;
+
+$select-dropdown-padding-top: 8px;
+$select-dropdown-padding-bottom: 8px;
+$select-dropdown-padding-right: 34px;
+$select-dropdown-padding-left: 14px;
+
+$mainMenuHeightCollapsed: 52px;
+$MainMenuHeight: 93px;
+$MainMenuHeightNarrow: 71px;
+$MainMenuHeightWide: 93px;
+
+$headerRightMarginNarrow: 20px;
+$headerRightMarginMedium: 25px;
+$headerRightMarginWide: 35px;
+
+$border-radius: 0px;
+
+$grid-gutter-width-base: 10px;
+
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 980px;
+$breakpoint-lg: 1200px;
+
+@function unicode($str){
+  @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"");
+}
+
+// Cards
+
+$card-spacer-x:            1.25rem;
+$card-spacer-y:            1rem;
+$card-border-width:        1px;
+$card-border-radius:       $border-radius;
+$card-border-color:        $brand-gray-medium-light;
+$card-border-radius-inner: calc(#{$card-border-radius} - #{$card-border-width});
+$card-cap-bg:              $brand-gray-medium-light;
+$card-bg:                  $brand-white;
+
+$card-link-hover-color:    $brand-white;
+
+$card-img-overlay-padding: 1.25rem;
+
+$card-deck-margin:          ($grid-gutter-width-base / 2);
+
+$card-columns-count:        3;
+$card-columns-gap:          1.25rem;
+$card-columns-margin:       $card-spacer-y;
+

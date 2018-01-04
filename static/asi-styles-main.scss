@@ -1,0 +1,88 @@
+/**
+	Project Name: ASI Site Styles Override
+*/
+
+
+//Helpers
+@import "sass/helpers/_mixins";
+@import "sass/helpers/_asi-mixins";
+@import "sass/helpers/_asi-variables";
+@import "sass/helpers/_classes";
+
+
+//No JavaScript
+@import "sass/helpers/_nojs";
+
+//Grid and Media Queries
+@import "susy";
+@import "sass/grid/_grid";
+
+//fonts
+@import "sass/global/fonts";
+@import "sass/global/fontawesome";
+
+// ASI Global Overrides
+@import "sass/global/asi-buttons";
+@import "sass/global/asi-typography";
+
+// ASI Templates, Modules and Partials Overrides
+@import "sass/modules/card";
+/*
+@import "sass/modules/header-promo";
+@import "sass/modules/mobile-menu";
+@import "sass/modules/main-menu";
+@import "sass/modules/search-and-cart-menu";
+@import "sass/modules/search-panel";
+@import "sass/modules/main-menu-dropdown";
+@import "sass/modules/cart-dropdown";
+@import "sass/modules/locator-dropdown";
+@import "sass/modules/utility-menu";
+@import "sass/modules/footer";
+@import "sass/modules/mobile-footer";
+@import "sass/modules/mobile-nav";
+@import "sass/modules/feature-image";
+@import "sass/modules/made-to-mix";
+@import "sass/modules/sub-content-sections";
+@import "sass/modules/module-1";
+@import "sass/modules/module-2";
+@import "sass/modules/module-3";
+@import "sass/modules/module-4";
+@import "sass/modules/store-locator";
+@import "sass/modules/ecommerce-module";
+@import "sass/modules/social-module";
+@import "sass/modules/promo-module";
+@import "sass/modules/offer-module";
+*/
+
+.container-fluid + .custom-page-maxwidth {
+	margin-top:15px;
+}
+
+// ASI Content Dividers and Separators
+.asi-divider {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+	.asi-divider .asi-divider-line {
+		width: 45px;
+		margin: 35px 0;
+		height: 2px;
+		background:$brand-red;
+		@media (min-width:$breakpoint-sm){
+			margin:20px 0;
+		}
+	}
+
+// ASI Overlays and Backgrounds
+.asi-overlay-dark{
+  @include asi-overlay($brand-black, 0.9);
+}
+
+.asi-overlay-light{
+  @include asi-overlay($brand-white, 0.9);
+}
+
+.asi-z-depth-1 {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

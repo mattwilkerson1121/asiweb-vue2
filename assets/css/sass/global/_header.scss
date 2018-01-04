@@ -1,0 +1,39 @@
+header {
+	background-color: $white;
+	width: 100%;
+	padding-top: 0;
+	@include clearfix;
+	width: 100%;
+
+	.asi-main-menu-outline {
+		z-index: 999999;
+		display: none;
+		position: relative;
+		@include susy-media(850px) {
+			display: block;
+		}
+		@include keylineOnBottom;
+		@include keylineOnTop;
+
+		&, .asi-full-logo {
+			z-index: 999999;
+			&.no-transition { transition: none !important; }
+			&.collapsed {
+				position:fixed;
+				top:33px;
+				transform:translateY(-105px);
+				transition: transform .2s;
+				&.show {
+					transform: translateY(-33px);
+					z-index: 4;
+				}
+			}
+		}
+		margin: 0;
+    width: 100%;
+		height: $MainMenuHeightNarrow;
+		@include susy-media(1000px) {
+	    height: $MainMenuHeight;
+	  }
+	}
+}

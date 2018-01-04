@@ -1,0 +1,244 @@
+footer {
+  color: $white;
+  background-color: $black;
+  width: 100%;
+  padding-top: 61px;
+
+  .asi-footer-container {
+    display: none;
+    @include susy-media(850px) {
+      display: block;
+    }
+    width: 376px;
+    margin: 0 auto;
+    @include susy-media(850px) {
+      width: 748px;
+    }
+    @include susy-media(1000px) {
+      width: 787px;
+    }
+    @include susy-media(1200px) {
+      width: 979px;
+    }
+    @include susy-media(1400px) {
+      width: 1200px;
+    }
+
+    .asi-footer-section-list {
+      @include susy-media(850px) {
+        width: 160px;
+      }
+      @include susy-media(1000px) {
+        width: 160px;
+        margin-right: 10px;
+      }
+      @include susy-media(1200px) {
+        width: 160px;
+        margin-right: 20px;
+      }
+      @include susy-media(1400px) {
+        width: 180px;
+        margin-right: 20px;
+      }
+      float: left;
+    }
+
+    h3{
+      font-family: 'Knockout-HTF49-Liteweight';
+      font-size: 20px;
+      font-weight: normal !important;
+      margin-bottom: 15px;
+      letter-spacing: 1.5px;
+    }
+
+    ul{
+      list-style-type: none;
+      padding: 0px;
+      font-size: 12px;
+      font-family: $nonserifFont;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    li{
+      margin-bottom: 10px;
+    }
+
+    .asi-footer-logo {
+      padding-top: 46px;
+      width: 60px;
+      margin: 0 auto;
+      margin-bottom: 46px;
+    }
+
+    .asi-footer-social-col{
+      display: none;
+      @include susy-media(850px) {
+        display: none;
+      }
+      @include susy-media(1000px) {
+        display: none;
+      }
+      @include susy-media(1200px) {
+        display: block;
+      }
+      @include susy-media(1400px) {
+        display: block;
+      }
+    }
+
+    .asi-footer-social-row{
+      margin: 0 auto;
+      margin-top: 50px;
+      padding-bottom:30px;
+      h3{
+        float: left;
+        margin-top: -1px;
+      }
+      img{
+        float: right;
+      }
+      display: block;
+      @include susy-media(850px) {
+        display: block;
+      }
+      @include susy-media(1000px) {
+        display: block;
+      }
+      @include susy-media(1200px) {
+        display: none;
+      }
+      @include susy-media(1400px) {
+        display: none;
+      }
+    }
+
+    .asi-social-icons{
+      @include susy-media(850px) {
+        float: none;
+        width: 275px;
+      }
+      @include susy-media(1000px) {
+        float: none;
+        width: 275px;
+      }
+      @include susy-media(1200px) {
+        float: left;
+        width: 150px;
+      }
+      @include susy-media(1400px) {
+        float: left;
+        width: 200px;
+      }
+      img{
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+      .facebook-icon{
+        height: 19px;
+      }
+      .twitter-icon{
+        height: 19px;
+      }
+      .youtube-icon{
+        height: 19px;
+        margin-top: 3px;
+      }
+      .pinterest-icon{
+        height: 21px;
+      }
+      .insta-icon{
+        height: 23px;
+      }
+    }
+
+    .asi-email-sign-up{
+      @include susy-media(850px) {
+        width: 224px;
+      }
+      @include susy-media(1000px) {
+        width: 264px;
+      }
+      @include susy-media(1200px) {
+        width: 264px;
+      }
+      @include susy-media(1400px) {
+        width: 280px;
+      }
+      float: right;
+      p{
+        font-size: 18px;
+        font-family: $nonserifFont;
+      }
+      border-bottom: 2px solid white;
+      padding-bottom: 13px;
+    }
+
+    .asi-copyright {
+      width: 318px;
+      margin: 0 auto;
+      font-size: 13px;
+      @include susy-media(850px) {
+        width: 787px;
+      }
+      @include susy-media(1000px) {
+        width: 787px;
+      }
+      @include susy-media(1200px) {
+        width: 979px;
+      }
+      @include susy-media(1400px) {
+        width: 1200px;
+      }
+      position: relative;
+      clear: both;
+      margin-top: 50px;
+      padding-bottom: 74px;
+      color: #9B9B9B;
+      letter-spacing: 0;
+      text-align: center;
+
+      a {
+        color: #9b9b9b;
+        text-decoration: none;
+      }
+    }
+
+    .asi-email-enter-btn{
+      background-color: #181818;
+      color: white;
+      border: none;
+      float: right;
+      padding: 0px;
+      padding-top: 5px;
+      font-size: 14px;
+      @include susy-media(850px) {
+        padding-right: 0px;
+      }
+    }
+
+    input[type="text"] {
+      width: 69%;
+      font-family: "ProximaNova-LightItalic";
+      @include susy-media(850px) {
+        font-size: 18px;
+      }
+      @include susy-media(1000px) {
+        font-size: 22px;
+      }
+      color: #ffffff !important;
+      letter-spacing: 0.61px;
+      height: 100%;
+      border: none;
+      outline: none;
+      margin-left: 0px;
+      background: none;
+    }
+    .asi-footer-column-container{
+      overflow: hidden; //allows asi-copyright margin-top to take effect
+    }
+
+  }
+}

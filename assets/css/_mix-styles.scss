@@ -1,0 +1,165 @@
+/**
+	Project Name: ASI Site Templates
+*/
+@import "sass/helpers/_asi-mixins";
+@import "sass/helpers/_asi-variables";
+@import "sass/helpers/_mixins";
+@import "sass/helpers/_variables";
+@import "sass/helpers/_classes";
+
+//No JavaScript
+@import "sass/helpers/_nojs";
+
+//fonts
+@import "sass/global/fonts";
+@import "sass/global/fontawesome";
+
+
+html,body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	@include font-size(16px);
+	position: relative;
+	background: $white;
+	font-family: $nonserifFont;
+	overflow-x: hidden;
+
+	&.modal-open {
+		overflow: hidden;
+	}
+}
+
+a {
+	color: $black;
+	&:hover {
+		color: $gray-hover;
+	}
+}
+
+section {
+	&:focus {
+		outline: none;
+	}
+}
+
+#page-container {
+	@include clearfix;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Makes border-box properties */
+@include border-box-sizing($box-model);
+
+.container {
+	//starts as a 4 column mobile container
+	@include container(1200px);
+	@include clearfix;
+
+  @media (min-width: 1000px) {
+    @include show-grid(12);
+  }
+}
+
+.cleaner {
+	clear: both;
+	width: 100%;
+}
+
+a {
+	color: $red;
+	&:focus {
+		outline: auto;
+	}
+}
+
+span.break {
+	clear: right;
+}
+
+.visible {
+	display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.asi-arrow-icon {
+	height: 8px;
+	margin-bottom: 3px;
+}
+
+.asi-price, .asi-semibold {
+	font-family: "ProximaNova-Semibold";
+}
+
+.asi-sale-price {
+	color: $red;
+	font-family: "ProximaNova-Semibold";
+}
+
+.asi-original-price {
+  color: $gray-medium;
+  font-size: 13px;
+  font-family: "ProximaNova-Regular";
+}
+
+.asi-field-in-use {
+	font-family: "ProximaNova-Regular" !important;
+	color: $black !important;
+}
+
+.asi-scroll-disabled {
+  overflow: hidden !important;
+}
+
+#overlay-menu-modal {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+	z-index:9;
+}
+
+.asi-homepage-module-h2 {
+	text-align: center;
+	font-family: "Knockout-HTF49-Liteweight";
+  font-size: 30px;
+  @include susy-media(850px) {
+    font-size: 46px;
+  }
+	color: #000000;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.asi-red-separator {
+	background-color: $red;
+	width: 29px;
+	height: 2px;
+	margin: 0 auto;
+  @include susy-media(850px) {
+    width: 35px;
+  }
+}
+
+.asi-red-text {
+	color: $red;
+}
+
+#page-content {
+	margin-top: 70px;
+	@include susy-media(850px) {
+    margin-top: 0;
+  }
+}

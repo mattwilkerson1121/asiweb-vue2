@@ -1,0 +1,32 @@
+.asi-module-2 {
+  background-image: url("../images/Recliner2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $black;
+  height: 500px;
+  width: 100%;
+  @include susy-media(850px) {
+    height: 60vw;
+  }
+
+  .asi-module-2-message {
+    text-align: center;
+    padding-top: 50px;
+    @include susy-media(850px) {
+      padding-top: 106px;
+    }
+
+    h2 {
+      color: black;
+      font-family: 'Knockout-HTF49-Liteweight';
+      font-size: 32px;
+      line-height: 90%;
+      @include susy-media(850px) {
+        font-size: 65px;
+      }
+    }
+
+  }
+
+}

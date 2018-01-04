@@ -1,0 +1,21 @@
+#asi-header-promo {
+  position: relative;
+  font-size: 10px;
+  background: $gray-dark;
+  color: $white;
+  letter-spacing: 1px;
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  line-height: 1.4em;
+  @include susy-media(850px) {
+    font-family: "ProximaNova-Regular";
+    font-size: 12px;
+  }
+    .asi-header-message {
+      padding: 19px 32px;
+      @include susy-media(850px) {
+        padding: 7px 32px;
+      }
+    }
+}

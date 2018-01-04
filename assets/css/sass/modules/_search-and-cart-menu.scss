@@ -1,0 +1,146 @@
+.asi-search-and-cart-menu {
+  position: absolute;
+  font-family: 'ProximaNova-SemiBold';
+  width: 121px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  right: 13px;
+  z-index: 9;
+  top: 0px;
+  @include susy-media(850px) {
+    right: 13px;
+  }
+  @include susy-media(1000px) {
+    height: 90px;
+    right: 17px;
+  }
+  @include susy-media(1200px) {
+    right: 28px;
+  }
+
+  .asi-search-close {
+    display: none;
+    margin-right: 12px;
+  }
+
+  .asi-search-open {
+    margin-right: 12px;
+  }
+
+  > ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+
+    > li {
+      padding-top: 27px;
+      margin-top: 0;//27px;
+      @include susy-media(1000px) {
+        padding-top: 38px;
+      }
+      margin-left: 10px;
+      float: left;
+      &:last-child {
+        width: 34px;
+        //this creates the Up Arrow element for the dropdown menus that point to the active nav item
+        &.clicked:after {
+          position: absolute;
+          bottom: -1px;
+          z-index: 12;
+          content: "";
+          background: url('/assets/images/triangle.png') no-repeat;
+          display: block;
+          width: 38px;
+          height: 19px;
+          margin: 0 auto;
+        }
+
+      }
+      display: block;
+      height: 100%;
+
+      .asi-icon {
+        width: 14px;
+        height: 20px;
+        float: left;
+        svg {
+          path {
+            fill: $gray-hover;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      #asi-cart-icon {
+        height: 25px;
+        svg path {
+          fill: $black;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      #asi-search-icon {
+        svg path {
+          fill: $black;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      #asi-close-icon {
+        svg path {
+          fill: $black;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .asi-cart-number {
+        color: $red;
+        font-size: 13px;
+        padding-left: 0;
+        line-height: 1.25;
+      }
+    }
+  }
+}
+
+// These fix dropdown positioning issues when the top menu gets collapsed
+.asi-main-menu-outline {
+  z-index: 999999;
+  &.collapsed {
+    .asi-search-and-cart-menu {
+      @include susy-media(850px) {
+        right: $headerRightMarginWide;
+      }
+
+      .asi-cart-number {
+        line-height: 1.3;
+      }
+
+      > ul > li {
+        margin-top: 0;
+        padding-top: 19px;
+      }
+    }
+
+    .asi-search-and-cart-menu {
+      height: 51px;
+    }
+
+    .asi-search-and-cart-menu > ul > li:last-child.clicked:after {
+      padding-top: 19px;
+      margin-top: 0;
+    }
+  }
+}

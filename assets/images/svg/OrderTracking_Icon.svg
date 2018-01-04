@@ -1,0 +1,29 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 9.8 9.8" style="enable-background:new 0 0 9.8 9.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{fill:#FFFFFF;}
+	.st2{mask:url(#mask-2);fill:#181818;}
+</style>
+<g id="Symbols">
+	<g id="Nav_850px" transform="translate(-472.000000, -11.000000)">
+		<g id="Page-1" transform="translate(472.000000, 11.000000)">
+			<g id="Clip-2">
+			</g>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="9.8" height="9.8">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="0" y="0" width="9.8" height="9.8" id="mask-2">
+				<g class="st0">
+					<polygon id="path-1" class="st1" points="9.8,9.8 9.8,0 0,0 0,9.8"/>
+				</g>
+			</mask>
+			<path id="Fill-1" class="st2" d="M7.3,5.4C7.1,6.3,6.3,7.1,5.4,7.3v-1H4.3v1C3.4,7.1,2.7,6.3,2.5,5.4h1V4.3h-1
+				c0.2-0.9,0.9-1.6,1.8-1.8v1h1.1v-1c0.9,0.2,1.6,0.9,1.8,1.8H6.3v1.1H7.3z M8.4,4.3c-0.2-1.5-1.5-2.7-3-3V0H4.3v1.4
+				c-1.5,0.2-2.7,1.5-3,3H0v1.1h1.4c0.2,1.5,1.4,2.7,3,3v1.4h1.1V8.4c1.5-0.2,2.7-1.5,3-3h1.4V4.3H8.4z"/>
+		</g>
+	</g>
+</g>
+</svg>

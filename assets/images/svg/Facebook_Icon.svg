@@ -1,0 +1,18 @@
+<svg width="11px" height="24px" viewBox="0 0 11 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="0.000366666667 23.815425 10.8203333 23.815425 10.8203333 0.000225 0.000366666667 0.000225"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -1.000000)">
+            <g id="Facebook_Icon" transform="translate(0.000000, 1.235955)">
+                <g>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M7.1357,7.711725 L7.1357,5.239725 C7.1357,4.311975 7.73703333,4.095225 8.16016667,4.095225 L10.7605667,4.095225 L10.7605667,0.014475 L7.1797,0.000225 C3.20356667,0.000225 2.29936667,3.043725 2.29936667,4.991475 L2.29936667,7.711725 L0.000366666667,7.711725 L0.000366666667,11.916225 L2.29936667,11.916225 L2.29936667,23.815725 L7.1357,23.815725 L7.1357,11.916225 L10.3983,11.916225 L10.8207,7.711725 L7.1357,7.711725 Z" id="Fill-1" fill="#FEFEFE" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

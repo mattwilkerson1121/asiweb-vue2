@@ -1,0 +1,289 @@
+nav#main-navigation {
+  background-color: $white;
+  position: relative;
+	font-family: 'ProximaNova-SemiBold';
+	letter-spacing: .11em;
+	font-size: 10px;
+  margin: 0 auto;
+  max-width: 1920px;
+  @include susy-media(1000px) {
+    font-size: 12px;
+  }
+	width: 100%;
+	height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  ul.asi-main-menu-left {
+    display: none !important;
+    @include susy-media(850px) {
+      display: block !important;
+    }
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    z-index: 2;
+    position: relative;
+    padding-right: 30px;
+    float: left;
+    height: 101%;
+    @include susy-media(1000px) {
+      padding-right: 50px;
+    }
+    @include susy-media(1200px) {
+      padding-right: 110px;
+    }
+    text-align: right;
+    width: 50%;
+    display: inline-block;
+    > li.asi-main-menu-list-item {
+      padding-top: 25px;
+      @include susy-media(1000px) {
+        padding-top: 36px;
+      }
+      @include triangle();
+      display: inline-block;
+      min-height:91px;
+      height: 101%;
+      @include susy-media(1000px) {
+        min-height:69px;
+      }
+      position: relative;
+
+      a {
+        @include transition-attribute(color, .2s);
+        display: block;
+        color: $black;
+        &:hover {
+          color: $gray-hover;
+        }
+        text-decoration: none;
+        margin: 3px 5px;
+        padding: 0;
+        @include susy-media(1000px) {
+          margin: 3px 7px;
+          padding: 0;
+        }
+        &.asi-nav-text {
+          padding-bottom: 3px;
+          border-bottom: 3px solid transparent;
+          &.asi-nav-active {
+            padding-bottom: 3px;
+            border-bottom: 3px solid black;
+            &:hover {
+              border-bottom: 3px solid $gray-hover;
+            }
+          }
+        }
+      }
+      &:hover .asi-main-menu-dropdown {
+        //display: block;
+      }
+
+      &.no-dropdown-menu {
+        &:hover:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  ul.asi-main-menu-right {
+    display: none !important;
+    @include susy-media(850px) {
+      display: block !important;
+    }
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-left: 30px;
+    @include susy-media(1000px) {
+      padding-left: 50px;
+    }
+    @include susy-media(1200px) {
+      padding-left: 110px;
+    }
+    width: 50%;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    float: right; //added as an IE9 alignment fix.
+    height: 101%;
+    > li.asi-main-menu-list-item {
+      padding-top: 25px;
+      @include susy-media(1000px) {
+        padding-top: 36px;
+      }
+      @include triangle();
+      display: inline-block;
+      min-height:91px;
+      height: 101%;
+      @include susy-media(1000px) {
+        min-height:69px;
+      }
+      position: relative;
+
+      a {
+        @include transition-attribute(color, .2s);
+        display: block;
+        color: $black;
+        &:hover {
+          color: #9b9b9b;
+        }
+        text-decoration: none;
+        margin: 3px 5px;
+        padding: 0;
+        @include susy-media(1000px) {
+          margin: 3px 7px;
+          padding: 0;
+        }
+        &.asi-nav-text {
+          padding-bottom: 3px;
+          border-bottom: 3px solid transparent;
+          &.asi-nav-active {
+            padding-bottom: 3px;
+            border-bottom: 3px solid black;
+            &:hover {
+              border-bottom: 3px solid $gray-hover;
+            }
+          }
+        }
+      }
+
+      &:hover .asi-main-menu-dropdown {
+        //display: block;
+      }
+
+      &.no-dropdown-menu {
+        &:hover:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.asi-nav-text {
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  &.asi-nav-active {
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+  }
+}
+
+.asi-logo {
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: absolute;
+
+  .asi-full-logo {
+    z-index: 999999;
+    text-align: center;
+    img {
+      width: 188px;
+      height: 52px;
+    }
+    display: none;
+    @include susy-media(1200px) {
+      display: block;
+    }
+  }
+
+  .asi-tile-icon {
+    text-align: center;
+    display: block;
+    height: 40px;
+    @include susy-media(1000px) {
+      height: 51px;
+    }
+    img {
+      height: 100%;
+    }
+    @include susy-media(1200px) {
+      display: none;
+    }
+  }
+
+  //reveal the full size logo and hide the icon ONLY in non-collapsed nav and ONLY at 1200px+ sizes.
+  &.asi-collapsed-logo {
+    z-index: 999999;
+    .asi-full-logo { //hide full logo when menu collapsed at 1200px+
+      @include susy-media(1200px) {
+        display: none;
+      }
+    }
+    .asi-tile-icon { //show tile at 35px always, and show it above 1200px
+      height: 35px;
+      @include susy-media(1200px) {
+        display: block;
+      }
+    }
+  }
+}
+
+/* These fix dropdown positioning issues when the top menu gets collapsed up. */
+.asi-main-menu-outline {
+  z-index: 999999;
+  &.collapsed {
+		nav#main-navigation > ul > li:hover .asi-main-menu-dropdown {
+			top: 51px;
+		}
+    //the position of the white triangle pointer on drop down nav menus when collapsed
+		nav#main-navigation > ul > li:hover:after {
+			margin-top: -5px;
+		}
+
+		nav#main-navigation > ul {
+			//width: 925px;
+		}
+
+		.asi-search-and-cart {
+			top: initial;
+		}
+
+    nav#main-navigation > ul > li.no-dropdown-menu.asi-logo .asi-tile-icon img {
+      height: 35px;
+    }
+
+    nav#main-navigation ul.asi-main-menu-left {
+      margin-top: 0;
+      @include susy-media(1000px) {
+        padding-right: 30px;
+      }
+
+      > li.asi-main-menu-list-item {
+        padding-top: 0px;
+        min-height: 52px;
+        a {
+          margin-top: 18px;
+        }
+      }
+    }
+
+    nav#main-navigation ul.asi-main-menu-right {
+      margin-top: 0;
+      @include susy-media(1000px) {
+        padding-left: 30px;
+      }
+
+      > li.asi-main-menu-list-item {
+        padding-top: 0px;
+        min-height: 52px;
+        a {
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}

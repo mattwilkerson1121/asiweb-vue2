@@ -1,0 +1,198 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin clearfix {
+  clear: both;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	};
+	&:after {
+		clear: both;
+	};
+}
+
+// ----- List Reset ----- //
+@mixin listReset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin keylineOnBottom {
+	border-bottom: 1px solid $gray-light;
+}
+
+@mixin keylineOnTop {
+	border-top: 1px solid $gray-light;
+}
+
+// // ----- Circle ----- //
+// @mixin circular($value: 50%) {
+// 	-moz-border-radius: $value;
+// 	-webkit-border-radius: $value;
+// 	border-radius: $value;
+// }
+
+// ----- Rounded Corners ----- //
+@mixin rounded($radius: 0.5em) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// ----- Opacity ----- //
+@mixin opacity($opacity: 0) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// ----- Rotate ----- //
+//usage example @include rotate(90deg);
+@mixin rotate($degree) {
+	-ms-transform: rotate($degree); /* IE 9 */
+	-webkit-transform: rotate($degree); /* Chrome, Safari, Opera */
+	transform: rotate($degree);
+}
+
+// // ----- Circle ----- //
+// @mixin circular {
+// 	-moz-border-radius: 50%;
+// 	-webkit-border-radius: 50%;
+// 	border-radius: 50%;
+// }
+
+//DropShadow
+@mixin box-shadow($left, $top, $blur, $spred, $color, $inset:"") {
+	-webkit-box-shadow:$left $top $blur $spred $color #{$inset};
+	-moz-box-shadow:$left $top $blur $spred $color #{$inset};
+	box-shadow:$left $top $blur $spred $color #{$inset};
+	/*
+		Usage
+        @include box-shadow(0px, 4px, 5px, 0px, rgba(0, 0, 0, 0.25));
+	*/
+}
+
+//Generic Transform
+@mixin transform($transforms) {
+  -webkit-transition: 150ms ease-in-out;
+  -moz-transition: 150ms ease-in-out;
+  -o-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+// @function pxtopercent($target, $parent: 16) {
+// 	@return percentage($target / $parent);
+// }
+
+// ----- Animation ----- //
+@mixin transition-attribute($attribute: all, $time: 0.5s) {
+	-webkit-transition: $attribute $time ease-out;
+	-moz-transition: $attribute $time ease-out;
+	-o-transition: $attribute $time ease-out;
+	transition: $attribute $time ease-out;
+}
+
+// ----- Animation ----- //
+@mixin animate($time: 0.5s) {
+	-webkit-transition: all $time ease-out;
+	-moz-transition: all $time ease-out;
+	-o-transition: all $time ease-out;
+	transition: all $time ease-out;
+}
+
+@mixin animate-frames($animationType, $time) {
+	-webkit-animation: $animationType $time; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: $animationType $time; /* Firefox < 16 */
+	-ms-animation: $animationType $time; /* Internet Explorer */
+	-o-animation: $animationType $time; /* Opera < 12.1 */
+	animation: $animationType $time;
+}
+
+// ----- Vertical Centering (IE9+) ----- //
+@mixin vertical-align($position: relative) {
+	position: $position;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+// ----- Pixels to REM (IE9+) ----- //
+@mixin delay-animation($sec) {
+	-webkit-animation-delay: $sec;
+	-moz-animation-delay: $sec;
+	animation-delay: $sec;
+}
+
+// ----- Pixels to REM (IE9+) ----- //
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+
+// ----- Form ----- //
+@mixin appearance($value) {
+	-webkit-appearance: $value;
+	-moz-appearance: $value;
+	appearance: $value;
+}
+
+// ----- BEM Helpers ----- //
+@mixin element($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin modifier($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
+@mixin triangle() {
+	//this creates the Up Arrow element for the dropdown menus that point to the active nav item
+	&:hover:after { //only shows this after element when hovering over li parent
+		content: "";
+		background: url('/assets/images/triangle.png') no-repeat;
+		display: block;
+		width: 38px;
+		height: 19px;
+		margin: 0 auto; //centers the arrow pointer under the list item text
+		//margin-top: 6px;
+		position: absolute;
+		bottom: 0;
+		z-index: 2;
+		left: 25%;
+		@include susy-media(1000px) {
+			//margin-top: 15px;
+		}
+		@include susy-media(1200px) {
+			//margin-top: 18px;
+		}
+
+	}
+}

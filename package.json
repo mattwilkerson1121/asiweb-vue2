@@ -1,0 +1,41 @@
+{
+  "name": "nuxt-project",
+  "version": "1.0.0",
+  "description": "asi development website project starter template setup",
+  "author": "Matt Wilkerson <mattwilkerson1121@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "browser-sync": "^2.23.2",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "browsersync": "0.0.1-security",
+    "localtunnel": "^1.8.3",
+    "nuxt": "^1.0.0-rc11",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.7.2",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^6.0.6"
+  }
+}

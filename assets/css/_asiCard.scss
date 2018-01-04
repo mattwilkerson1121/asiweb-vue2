@@ -1,0 +1,49 @@
+/*** ASI STYLED CARD TILES ***/
+.asi-card-link .asi-card:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
+}
+.asi-card-link .asi-card:hover h3.asi-card-title-text{
+    color: $brand-red;
+}
+.asi-card .form-horizontal .form-group{ margin-left:inherit; margin-right:inherit}
+.asi-card { border-radius:0px; margin-bottom:5px; background-color:#fff; padding:0px 0px;}
+.asi-card-body { 
+  padding-left: $brand-base-fontsize; 
+  padding-right: $brand-base-fontsize; 
+  margin-top: $brand-base-fontsize;
+  margin-bottom: $brand-base-fontsize; 
+  color:rgba(0, 0, 0, 0.84)
+}
+.asi-card-title { 
+  padding: $brand-base-fontsize $brand-base-fontsize; 0 $brand-base-fontsize;;
+  margin-bottom: $brand-base-fontsize;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.asi-card-title > .dropdown .dropdown-toggle { color: inherit;}
+.asi-card-title > .dropdown .dropdown-toggle { color: inherit;}
+.asi-card-title-text { margin-top: 0; margin-bottom: 0; color: inherit;}
+
+h3.asi-card-title-text{ font-size:1rem; font-weight:400; margin-bottom:1rem;font-family: $brand-font-pnr; color: $brand-gray;}
+.asi-card-subtitle-text { line-height: 1.6;  margin-bottom: 0;  opacity: 0.54; font-size: 14px;}
+.asi-card-footer{ padding:8px 16px; display:table; content:""; width:100%;}
+.asi-card-actions{ padding:8px 4px;}
+.asi-card-actions .btn{ margin-left:4px; margin-right:4px; margin-bottom:8px;}
+.asi-card-actions .btn:first-child{margin-left:12px;}
+.asi-card-actions .btn:last-child{margin-right:12px;}
+.asi-card-actions .btn.asi-btn-flat{ margin-left:4px; margin-right:4px; margin-bottom:0;}
+.asi-card-actions .btn{padding: 10px 8px; min-width:inherit;}
+.asi-card-actions .btn.asi-btn-fab{padding: 0;}
+
+/* Card Media Action */
+.asi-card-media-inline .asi-card-media{ margin-top: $brand-base-fontsize; padding-left: $brand-base-fontsize; padding-right: $brand-base-fontsize;}
+.asi-card-media-inline .asi-card-media h2.asi-card-title-text{ margin-top:4px;}
+.asi-card-footer-p16 { padding-left: 20px; padding-right: 20px;}
+.asi-card-footer-no-border { border-color: transparent; padding-top: 0;}
+.asi-card-list{ padding-top:8px; padding-bottom:8px; background-color:#fff;}
+
+/* Card inverse*/
+.asi-card-inverse{ background-color: #373a3c; color: #eceeef;}
+.asi-card-inverse .asi-card-body{color: rgba(255, 255, 255, 0.84);}

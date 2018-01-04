@@ -1,0 +1,79 @@
+.asi-cart-dropdown {
+  position: fixed;
+  display: none;
+  z-index: 11;
+  right: 0;
+  top: 129px;
+  font-size: 16px;
+  font-family: "ProximaNova-Regular";
+  @include susy-media(1000px) {
+    top: 149px;
+  }
+
+  .asi-cart-date {
+    font-family: "ProximaNova-Semibold"
+  }
+
+  .menu-content {
+    width: 440px;
+    padding-top: 0px;
+    background: $white;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.11);
+    text-align: left;
+
+    .asi-cart-item {
+      @include keylineOnBottom;
+      height: 88px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .asi-cart-description {
+        @include vertical-align(relative);
+        text-align: left;
+        width: 280px;
+        margin-left: 100px;
+      }
+
+      p {
+        @include vertical-align(relative);
+      }
+
+      .asi-cart-image-centerer {
+        float: left;
+        clear: none;
+        width: 82px;
+        text-align: center;
+        @include vertical-align(relative);
+      }
+    }
+
+    .asi-cart-decisions {
+      padding: 26px 40px 26px 40px;
+      text-align: center;
+      margin: 0;
+      button {
+        width: 100%;
+      }
+    }
+
+    .asi-cart-items-status {
+      text-align: center;
+    }
+
+    .asi-cart-total-status {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+//These fix dropdown positioning issues when the top menu gets collapsed
+.asi-main-menu-outline {
+  z-index: 999999;
+  &.collapsed {
+    .asi-cart-dropdown {
+      top: 51px;
+    }
+  }
+}

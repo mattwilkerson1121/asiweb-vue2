@@ -1,0 +1,24 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 8.5 12.9" style="enable-background:new 0 0 8.5 12.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#181818;}
+</style>
+<g>
+	<polygon id="path-1" class="st0" points="1,6.4 1,1.5 7.5,1.5 7.5,6.4 7.5,11.4 1,11.4 	"/>
+</g>
+<title>Pin_Icon</title>
+<desc>Created with Sketch.</desc>
+<g id="Symbols">
+	<g id="Nav_850px" transform="translate(-580.000000, -11.000000)">
+		<g id="Pin_Icon" transform="translate(580.000000, 11.000000)">
+			<g id="Page-1">
+				<g id="Clip-2">
+				</g>
+				<path id="Fill-1" class="st1" d="M4.3,6.5c-1,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7S6,3.9,6,4.8S5.2,6.5,4.3,6.5 M4.3,1.5
+					C2.5,1.5,1,3,1,4.8C1,5.4,1.2,6,1.4,6.4s2.8,5,2.8,5s2.6-4.6,2.8-5s0.4-1,0.4-1.6C7.5,3,6.1,1.5,4.3,1.5"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

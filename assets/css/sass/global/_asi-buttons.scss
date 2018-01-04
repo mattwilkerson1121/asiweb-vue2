@@ -1,0 +1,138 @@
+button,
+.asi-mix-button,
+button.asi-mix-button,
+a.asi-mix-button {
+  border: 2px solid $brand-black;
+  font-family: "ProximaNova-Semibold";
+  text-transform: uppercase;
+  font-size: 14px;
+  @include susy-media($breakpoint-sm) {
+    font-size: 16px;
+  }
+  letter-spacing: $letter-spacing-small;
+  padding: 14px 35px 12px 35px;
+  outline: none;
+  transition: .2s ease;
+
+  // white button by default
+  background-color: $brand-white;
+  color: $brand-black;
+
+  &:hover {
+    background-color: $brand-black;
+    color: $brand-white;
+    transition: .3s ease;
+  }
+
+  &.asi-black {
+    background-color: $brand-black;
+    color: $brand-white;
+    &:hover {
+      background-color: $brand-white;
+      color: $brand-black;
+      transition: .3s ease;
+    }
+  }
+
+  &.asi-red {
+    background-color: $brand-red;
+    color: $brand-white;
+    border: none;
+    &:hover {
+      background-color: $brand-red-dark;
+      color: $brand-white;
+      transition: .3s ease;
+    }
+  }
+
+  &.black-transparent {
+    background-color: $brand-black;
+    color: $brand-white;
+    &:hover {
+      background-color: $brand-gray-lighter;
+      color: $brand-black;
+      transition: .3s ease;
+    }
+  }
+
+  &.asi-dark-gray {
+    background-color: $brand-gray-dark;
+    color: $brand-white;
+    border: none;
+    &:hover {
+      background-color: $brand-gray-very-dark;
+      color: $brand-white;
+      transition: .3s ease;
+    }
+  }
+
+}
+.asi-mix-button-flat,
+button.asi-mix-button-flat,
+a.asi-mix-button-flat {
+  border: 2px solid transparent;
+  background-color:transparent;
+  font-family: "ProximaNova-Semibold";
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: $letter-spacing-small;
+  @include susy-media($breakpoint-sm) {
+    font-size: 16px;
+    letter-spacing: 1.275px;
+  }
+  padding: 0 0 0 0;
+  outline: none;
+  transition: .2s ease;
+
+  // white button by default
+  background-color:transparent;
+  color: $brand-black;
+
+  &:hover {
+    color: $brand-red;
+    transition: .3s ease;
+  }
+
+  &:after {
+    font-family: "FontAwesome";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: $fa-var-angle-right;
+    margin-left: 4px;
+  }
+
+  &.asi-red {
+    background-color:transparent;
+    color: $brand-red;
+    border: none;
+    &:hover {
+      background-color:transparent;
+      color: $brand-black;
+      transition: .3s ease;
+    }
+  }
+
+  &.asi-white {
+    background-color:transparent;
+    color: $brand-white;
+    &:hover {
+      background-color:transparent;
+      color: $brand-gray-dark;
+      transition: .3s ease;
+    }
+  }
+
+  &.asi-dark-gray {
+    background-color: transparent;
+    color: $brand-gray-dark;
+    border: none;
+    &:hover {
+      background-color: transparent;
+      color: $brand-gray-very-dark;
+      transition: .3s ease;
+    }
+  }
+}
+
+

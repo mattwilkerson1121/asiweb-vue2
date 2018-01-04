@@ -1,0 +1,10 @@
+$susy: (
+  gutter-position: split,
+  container-position: center,
+	columns: 4//,
+  // debug: (
+  //   image: show
+  // )
+);
+
+@include layout($susy);

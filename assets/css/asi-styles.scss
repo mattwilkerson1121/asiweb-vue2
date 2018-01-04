@@ -1,0 +1,164 @@
+/**
+	Project Name: ASI Site Styles Override
+*/
+
+@import "sass/helpers/_asi-mixins";
+/*
+@import "_mix-styles";
+@import "sass/helpers/_asi-variables";
+@import "sass/global/asi-buttons";
+@import "sass/global/asi-typography";
+
+// ASI Templates, Modules and Partials Overrides
+@import "sass/modules/card";
+@import "sass/modules/header-promo";
+@import "sass/modules/mobile-menu";
+@import "sass/modules/main-menu";
+@import "sass/modules/search-and-cart-menu";
+@import "sass/modules/search-panel";
+@import "sass/modules/main-menu-dropdown";
+@import "sass/modules/cart-dropdown";
+@import "sass/modules/locator-dropdown";
+@import "sass/modules/utility-menu";
+@import "sass/modules/footer";
+@import "sass/modules/mobile-footer";
+@import "sass/modules/mobile-nav";
+@import "sass/modules/feature-image";
+@import "sass/modules/made-to-mix";
+@import "sass/modules/sub-content-sections";
+@import "sass/modules/module-1";
+@import "sass/modules/module-2";
+@import "sass/modules/module-3";
+@import "sass/modules/module-4";
+@import "sass/modules/store-locator";
+@import "sass/modules/ecommerce-module";
+@import "sass/modules/social-module";
+@import "sass/modules/promo-module";
+@import "sass/modules/offer-module";
+*/
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+$asi-base-fontsize: 16px;
+
+/* ASI Color Pallete */
+$brand-white: #ffffff;
+$brand-red: #ee3d42;
+$brand-black: #181818;
+$brand-tan: #efefea;
+$brand-gray: #525050;
+$brand-gray-lighest: #f0f0f1;
+$brand-gray-light: #ddd;
+$brand-gray-medium: #c2c2c2;
+$brand-gray-dark: #333;
+$brand-gray-darkest: #2f2f2f;
+
+$brand-font-pnr: "ProximaNova-Regular", sans-serif;
+$brand-font-pns: "ProximaNova-Semibold", sans-serif;
+$brand-font-pnb: "ProximaNova-Bold", sans-serif;
+$brand-font-ko49: "Knockout-HTF49-Liteweight", "ProximaNova-Bold", sans-serif;
+$brand-font-ko29: "Knockout-HTF29-JuniorLiteweight", "ProximaNova-Semibold", sans-serif;
+
+$margin-tb-0: 0 0;
+$margin-tb-15: 15px 0;
+$margin-b-0: 0;
+$margin-t-0: 0;
+$margin-t-15: 15px auto 0 auto;
+$margin-b-15: 0 auto 15px auto;
+
+$padding-lr-0: 0 0;
+$padding-lr-10: 0 10px;
+$padding-lr-15: 0 15px;
+
+.custom-page-body {
+	position:relative;
+	width:100%;
+	height:100%;
+	min-height:320px;
+	padding:0;
+	margin:0;
+	font-size: $asi-base-fontsize;
+	font-family: $brand-font-pnr;
+	letter-spacing:1px;
+}
+
+img.img-responsive {
+	width:100%;
+	max-width:100%;
+	padding:0;
+	margin:0;
+}
+
+.container-fluid + .custom-page-maxwidth {
+	margin-top:15px;
+}
+
+.custom-page-maxwidth {
+	position:relative;
+	max-width:1200px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+// ASI Content Dividers and Separators
+.asi-divider {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+	.asi-divider .asi-divider-line {
+		width: 45px;
+		margin: 35px 0;
+		height: 2px;
+		background:$brand-red;
+		@media (min-width:$breakpoint-sm){
+			margin:20px 0;
+		}
+	}
+
+// ASI Overlays and Backgrounds
+.asi-overlay-dark{
+  @include asi-overlay($brand-black, 0.9);
+}
+
+.asi-overlay-light{
+  @include asi-overlay($brand-white, 0.9);
+}
+
+.asi-z-depth-1 {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+// ASI Disclaimer Text Styles
+.asi-disclaimer-section {
+	padding:25px 15px;
+	position:relative;
+	display:block;
+	width:100%;
+	margin:0 0;
+}
+p.asi-disclaimer{
+	text-align:center;
+	font-size: $asi-base-fontsize;
+	line-height:($asi-base-fontsize) + 4;
+	color: $brand-gray;
+	font-family: $brand-font-pnr;
+	padding:0 0;
+	margin:0 auto;
+}
+
+.asi-z-depth{ box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);}
+.asi-z-depth-1{ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+.asi-z-depth-2 { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+.asi-z-depth-3 { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+.asi-z-depth-4 { box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
+.asi-z-depth-5 { box-shadow: 0 24px 48px rgba(0,0,0,0.30), 0 20px 14px rgba(0,0,0,0.22);}
+
+@import 'sass/asiCategoryHeader';
+@import 'sass/asiCard';
+
+

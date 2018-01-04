@@ -1,0 +1,213 @@
+/**
+	Project Name: ASI Site Templates
+*/
+
+//Plugins
+@import url("vendor/normalize.css");
+@import url("vendor/main.css");
+
+//default slick carousel styles
+@import url("vendor/slick/slick.css");
+@import url("vendor/slick/slick-theme.css");
+
+@import url("vendor/hamburgers.css");
+
+//Helpers
+@import "sass/helpers/_mixins";
+@import "sass/helpers/_variables";
+@import "sass/helpers/_classes";
+
+//No JavaScript
+@import "sass/helpers/_nojs";
+
+//Grid and Media Queries
+@import "susy";
+@import "sass/grid/_grid";
+
+//fonts
+@import "sass/global/fonts";
+@import "sass/global/fontawesome";
+
+//Documentation
+@import "sass/documentation/documentation";
+
+html,body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	@include font-size(16px);
+	position: relative;
+	background: $white;
+	font-family: $nonserifFont;
+	overflow-x: hidden;
+
+	&.modal-open {
+		overflow: hidden;
+	}
+}
+
+a {
+	color: $black;
+	&:hover {
+		color: $gray-hover;
+	}
+}
+
+section {
+	&:focus {
+		outline: none;
+	}
+}
+
+#page-container {
+	@include clearfix;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+.container {
+	//starts as a 4 column mobile container
+	@include container(1200px);
+	@include clearfix;
+
+  @media (min-width: 1000px) {
+    @include show-grid(12);
+  }
+}
+
+.cleaner {
+	clear: both;
+	width: 100%;
+}
+
+a {
+	color: $red;
+	&:focus {
+		outline: auto;
+	}
+}
+
+span.break {
+	clear: right;
+}
+
+.visible {
+	display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.asi-arrow-icon {
+	height: 8px;
+	margin-bottom: 3px;
+}
+
+.asi-price, .asi-semibold {
+	font-family: "ProximaNova-Semibold";
+}
+
+.asi-sale-price {
+	color: $red;
+	font-family: "ProximaNova-Semibold";
+}
+
+.asi-original-price {
+  color: $gray-medium;
+  font-size: 13px;
+  font-family: "ProximaNova-Regular";
+}
+
+.asi-field-in-use {
+	font-family: "ProximaNova-Regular" !important;
+	color: $black !important;
+}
+
+.asi-scroll-disabled {
+  overflow: hidden !important;
+}
+
+#overlay-menu-modal {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+	z-index:9;
+}
+
+.asi-homepage-module-h2 {
+	text-align: center;
+	font-family: "Knockout-HTF49-Liteweight";
+  font-size: 30px;
+  @include susy-media(850px) {
+    font-size: 46px;
+  }
+	color: #000000;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.asi-red-separator {
+	background-color: $red;
+	width: 29px;
+	height: 2px;
+	margin: 0 auto;
+  @include susy-media(850px) {
+    width: 35px;
+  }
+}
+
+.asi-red-text {
+	color: $red;
+}
+
+#page-content {
+	margin-top: 70px;
+	@include susy-media(850px) {
+    margin-top: 0;
+  }
+}
+
+//Globals
+@import "sass/global/header";
+@import "sass/global/typography";
+@import "sass/global/buttons";
+@import "sass/global/sticky";
+
+//Templates, Modules and Partials
+@import "sass/modules/header-promo";
+@import "sass/modules/mobile-menu";
+@import "sass/modules/main-menu";
+@import "sass/modules/search-and-cart-menu";
+@import "sass/modules/search-panel";
+@import "sass/modules/main-menu-dropdown";
+@import "sass/modules/cart-dropdown";
+@import "sass/modules/locator-dropdown";
+@import "sass/modules/utility-menu";
+@import "sass/modules/footer";
+@import "sass/modules/mobile-footer";
+@import "sass/modules/mobile-nav";
+@import "sass/modules/feature-image";
+@import "sass/modules/made-to-mix";
+@import "sass/modules/sub-content-sections";
+@import "sass/modules/module-1";
+@import "sass/modules/module-2";
+@import "sass/modules/module-3";
+@import "sass/modules/module-4";
+@import "sass/modules/store-locator";
+@import "sass/modules/ecommerce-module";
+@import "sass/modules/social-module";
+@import "sass/modules/promo-module";
+@import "sass/modules/offer-module";

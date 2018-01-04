@@ -1,0 +1,112 @@
+.asi-social-module {
+
+  .asi-social-module-intro {
+      width: 100%;
+      text-align: center;
+      line-height: 26px;
+      font-size: 14px;
+      @include susy-media(850px) {
+        font-size: 16px;
+      }
+      margin: 18px auto 44px auto;
+  }
+
+  .asi-homepage-module-h2 {
+    margin: 50px auto 0 auto;
+    line-height: 1;
+    @include susy-media(850px) {
+      margin: 85px auto 0 auto;
+    }
+  }
+
+  .asi-social-module-carousel {
+    @include clearfix();
+
+    .asi-social-module-carousel-items {
+
+      @include susy-media(850px) {
+        max-width: 780px;
+      }
+      @include susy-media(1000px) {
+        max-width: 860px;
+      }
+      @include susy-media(1200px) {
+        max-width: 1180px;
+      }
+
+      min-width: 280px;
+      max-width: 100%;
+      //max-width: 280px;
+      margin: 0 auto;
+
+      .slick-prev {
+        display: none;
+      }
+
+      .slick-next {
+        display: none;
+      }
+
+      .slick-dots {
+        bottom: -43px;
+      }
+
+      .slick-dots li {
+        margin: 0;
+      }
+
+      .slick-dots li button:before {
+        font-size: 10px;
+        opacity: 1;
+        color: #cccccc;
+      }
+
+      .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #4c4c4c;
+      }
+
+      .asi-social-module-carousel-item {
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        position: relative;
+
+        img {
+          width: 280px;
+          height: 280px;
+          @include susy-media(850px) {
+            width: 180px;
+            height: 180px;
+          }
+          @include susy-media(1000px) {
+            width: 200px;
+            height: 200px;
+          }
+          @include susy-media(1200px) {
+            width: 280px;
+            height: 280px;
+          }
+        }
+
+        .asi-social-module-insta-icon {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
+
+  .asi-social-module-footer {
+    width: 100%;
+    text-align: center;
+    //margin: 60px auto 100px auto;
+    margin: 60px auto 50px auto;
+    @include susy-media(850px) {
+      margin: 60px auto 100px auto;
+    }
+  }
+}

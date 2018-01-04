@@ -1,0 +1,50 @@
+h1 {
+	margin: 0;
+	padding: 0;
+	color: $white;
+	@include font-size(44px);
+	line-height: 52px;
+	font-family: $serifFont;
+	font-weight: lighter;
+}
+
+h2 {
+	color: $white;
+	margin: 0 0 30px 0;
+	padding: 0;
+	font-family: $serifFont;
+	font-weight: lighter;
+}
+
+h3 {
+	@include font-size(22px);
+	margin: 0 0 10px 0;
+	padding: 0;
+	line-height: 28px;
+	font-family: $serifFont;
+	font-weight: lighter;
+}
+
+p {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.title {
+	color: $white;
+	@include font-size(16px);
+	padding-bottom: 15px;
+	font-weight: 600;
+	&:after {
+		border-bottom: 1px dashed $white;
+		content: "";
+		width: 210px;
+		height: 1px;
+		display: block;
+		padding-top: 10px;
+	}
+}
+
+strong {
+	font-family: "ProximaNova-Bold";
+}

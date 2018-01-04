@@ -1,0 +1,112 @@
+.asi-offer-module {
+  position: relative;
+  background-color: $gray-medium-light;
+  width: 100%;
+  height: auto;
+  @include susy-media(850px) {
+    height: 645px;
+  }
+  @include clearfix();
+
+  .asi-offer-feature-image-lg {
+    position: relative;
+    right: 0;
+    bottom: 50px;
+    width: 100%;
+    height: auto;
+    @include susy-media(850px) {
+      position: absolute;
+      @include vertical-align(absolute);
+      width: 689px;
+      height: 484px;
+      right: -290px;
+    }
+    @include susy-media(1200px) {
+      right: -90px;
+    }
+    @include susy-media(1400px) {
+      right: 0;
+    }
+  }
+
+  .asi-offer-module-grid-content {
+    position: relative;
+    @include susy-media(850px) {
+      @include vertical-align(relative);
+    }
+
+    .asi-offer-module-headline {
+      text-align: center;
+      padding-top: 50px;
+      @include span(4 of 4);
+      color: $black;
+      letter-spacing: 0.98px;
+      line-height: 28px;
+      text-transform: uppercase;
+      font-family: "Knockout-HTF49-Liteweight";
+      font-size: 30px;
+      @include susy-media(850px) {
+        @include span(5 of 12);
+        @include push(1 of 12);
+        text-align: left;
+        padding-top: 77px;
+        letter-spacing: 1.54px;
+        line-height: 60px;
+        font-size: 65px;
+      }
+
+      .asi-red-separator {
+        margin: 25px auto;
+        @include susy-media(850px) {
+          margin: 35px 0;
+        }
+      }
+    }
+
+    .asi-offer-module-text {
+      text-align: center;
+      margin-top: 0;
+      font-size: 14px;
+      color: $black;
+      letter-spacing: 0;
+      line-height: 26px;
+      @include susy-media(850px) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+      @include susy-media(850px) {
+        @include break;
+        @include span(5 of 12);
+        @include push(1 of 12);
+        text-align: left;
+      }
+      .asi-red-text {
+        font-family: 'ProximaNova-Bold';
+        @include susy-media(0px 850px) {
+          &:after {
+            content: "\A";
+            white-space: pre;
+          }
+        }
+      }
+    }
+
+    .asi-offer-module-button-container {
+      @include break;
+      @include span(4 of 4);
+      text-align: center;
+      padding-top: 35px;
+      padding-bottom: 50px;
+      text-align: center;
+      @include susy-media(850px) {
+        @include span(2 of 12);
+        @include push(1 of 12);
+        padding-top: 40px;
+        text-align: left;
+      }
+      button {
+        white-space: nowrap;
+      }
+    }
+  }
+}

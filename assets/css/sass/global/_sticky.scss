@@ -1,0 +1,16 @@
+.stuck {
+  position:fixed;
+  top: 0;
+}
+
+.collapsed {
+  height: $mainMenuHeightCollapsed !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block;
+}

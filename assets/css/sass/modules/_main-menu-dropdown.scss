@@ -1,0 +1,263 @@
+.asi-main-menu-dropdown {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 129px;
+  @include susy-media(1000px) {
+    top: 125px;
+  }
+
+  .menu-content {
+    background: $white;
+    padding: 40px 0;
+    height: 420px;
+    min-height: 420px;
+    @include susy-media(1000px 1200px) {
+      padding: 45px 0;
+      height: 510px;
+      min-height: 510px;
+    }
+    @include susy-media(1200px) {
+      padding: 50px 0;
+      height: 480px;
+      min-height: 480px;
+    }
+
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.11);
+    text-align: left;
+
+    .asi-dropdown-save-footer {
+      display: none;
+      @include susy-media(850px 1200px) {
+        display: block;
+      }
+      border-top: 1px solid $gray-light;
+      font-family: 'ProximaNova-RegularItalic';
+      font-size: 16px;
+      height: 65px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      padding-top: 15px;
+      bottom: 0;
+      .asi-dropdown-save {
+        font-family: 'Knockout-HTF49-Liteweight';
+        font-size: 20px;
+        color: $red;
+      }
+    }
+
+    .asi-menu-content-centered {
+      width: 850px;
+      @include susy-media(1000px) {
+        width: 1000px;
+      }
+      @include susy-media(1200px) {
+        width: 1180px;
+      }
+      padding: 0px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+
+      h3 {
+        font-family: "ProximaNova-Semibold";
+        font-size: 10px;
+        @include susy-media(1000px) {
+          font-size: 12px;
+        }
+        color: #181818;
+        letter-spacing: 0.93px;
+        text-transform: uppercase;
+        line-height: 1em;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          font-family: "ProximaNova-Regular";
+          font-size: 10px;
+          @include susy-media(1000px) {
+            font-size: 12px;
+          }
+          color: #181818;
+          letter-spacing: 0;
+          line-height: 16px;
+          padding: 2px 0;
+          @include susy-media(1000px){
+            padding: 7px 0;
+          }
+
+          a {
+            padding: 0 !important;
+            margin: 0 !important;
+          }
+        }
+      }
+
+      .menu-item-image-container {
+        height: 72px;
+        width: 110px;
+        position: relative;
+        margin-bottom: 15px;
+
+        .menu-item-image {
+          position: absolute;
+          bottom: 0;
+          &.seating {
+            width: 39px;
+            height: 64px;
+          }
+          &.cabinets {
+            width: 59px;
+            height: 72px;
+          }
+          &.tables {
+            width: 81px;
+            height: 37px;
+          }
+          &.accents {
+            width: 49px;
+            height: 67px;
+          }
+        }
+      }
+
+      #seating-menu-item {
+        width: 99px;
+        left: 75px;
+        @include susy-media(1000px) {
+          width: 133px;
+          left: 95px;
+        }
+        @include susy-media(1200px) {
+          width: 155px;
+          left: 20px;
+        }
+        position: absolute;
+        top: 0;
+      }
+
+      #cabinet-menu-item {
+        width: 99px;
+        left: 205px;
+        @include susy-media(1000px) {
+          width: 133px;
+          left: 250px;
+        }
+        @include susy-media(1200px) {
+          width: 155px;
+          left: 197px;
+        }
+        position: absolute;
+        top: 0;
+      }
+
+      #table-menu-item {
+        width: 99px;
+        left: 336px;
+        @include susy-media(1000px) {
+          width: 133px;
+          left: 405px;
+        }
+        @include susy-media(1200px) {
+          width: 155px;
+          left: 374px;
+        }
+        position: absolute;
+        top: 0;
+      }
+
+      #accents-menu-item {
+        width: 99px;
+        left: 467px;
+        @include susy-media(1000px) {
+          width: 133px;
+          left: 560px;
+        }
+        @include susy-media(1200px) {
+          width: 155px;
+          left: 551px;
+        }
+        position: absolute;
+        top: 0;
+      }
+
+      #embedded-promo-menu-item {
+        // this is hidden for all sizes below 1200px
+        // (instead a bottom endcap shows up below dropdown on  all smaller sizes)
+        position: absolute;
+        top: 0;
+        display: none;
+        width: 0;
+        left: 0;
+        @include susy-media(1200px) {
+          display: block;
+          width: 260px;
+          left: 708px;
+        }
+        .price {
+          font-family: 'Knockout-HTF49-Liteweight';
+          font-size: 21px;
+          color: $red;
+          letter-spacing: 0.8px;
+          text-align: center;
+          margin-top: 10px;
+          width: 100%;
+        }
+        .description {
+          font-family: 'ProximaNova-RegularItalic';
+          text-align: center;
+          font-size: 14px;
+          color: #181818;
+          letter-spacing: 1px;
+          margin-top: 4px;
+          width: 100%;
+        }
+      }
+      .asi-vertical-divider {
+        display: none;
+        left: 0;
+        top: 0;
+        @include susy-media(850px 1000px) {
+          display: block;
+          left: 597px;
+        }
+        @include susy-media(1000px 1200px) {
+          display: block;
+          left: 710px;
+        }
+        width: 1px;
+        height: 227px;
+        border-left: 1px solid $gray-light;
+        position: absolute;
+      }
+      #quick-links-menu-item {
+        position: absolute;
+        width: 136px;
+        left: 640px;
+        @include susy-media(1000px) {
+          width: 200px;
+          left: 770px;
+        }
+        @include susy-media(1200px) {
+          width: 200px;
+          left: 1022px;
+        }
+        top: 0;
+      }
+    }
+  }
+}
+
+#main-navigation.asi-promo-visible {
+  .asi-main-menu-dropdown {
+    @include susy-media(1000px) {
+      top: 154px;
+    }
+  }
+}

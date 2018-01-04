@@ -1,0 +1,74 @@
+
+// ----- Pixels to REM (IE9+) ----- //
+@function asiCalculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+// ----- Text + Flat Link Button FA Icons ----- //
+
+@mixin fontawesome-icon {
+  font-family: "FontAwesome";
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ----- Overlays ----- //
+@mixin asi-overlay($background, $opacity) {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: $background;
+  opacity: $opacity;
+}
+
+// ----- Card Variants ----- //
+@mixin card-variant($background, $border) {
+  background-color: $background;
+  border-color: $border;
+
+  .card-header,
+  .card-footer {
+    background-color: transparent;
+  }
+}
+
+@mixin card-outline-variant($color) {
+  background-color: transparent;
+  border-color: $color;
+}
+
+//
+// Inverse text within a card for use with dark backgrounds
+//
+
+@mixin card-inverse {
+  color: rgba(255,255,255,.65);
+
+  .card-header,
+  .card-footer {
+    background-color: transparent;
+    border-color: rgba(255,255,255,.2);
+  }
+  .card-header,
+  .card-footer,
+  .card-title,
+  .card-blockquote {
+    color: #fff;
+  }
+  .card-link,
+  .card-text,
+  .card-subtitle,
+  .card-blockquote .blockquote-footer {
+    color: rgba(255,255,255,.65);
+  }
+  //.card-link {
+    //@include hover-focus {
+      //color: $card-link-hover-color;
+    //}
+  //}
+}
+
